@@ -1,0 +1,82 @@
+<Window
+    x:Class="RecipesWinUI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RecipesWinUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Receptek">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="BaseAlt" />
+    </Window.SystemBackdrop>
+
+    <Grid Background="#FFC9AE8C">
+
+        <NavigationView x:Name="NavView"
+                        PaneDisplayMode="Left"
+                        AlwaysShowHeader="True"
+                        IsSettingsVisible="False"
+                        IsBackButtonVisible="Collapsed"
+                        IsPaneToggleButtonVisible="False"
+                        CornerRadius="12"
+                        SelectionChanged="NavView_SelectionChanged">
+
+            <NavigationView.PaneHeader>
+
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Spacing="8"
+                            Margin="0,10,0,10">
+
+                    <TextBlock Text="Kategóriák"
+                               FontSize="26"
+                               FontWeight="Bold"
+                               Foreground="#FF4B3A2E"
+                               VerticalAlignment="Center"
+                               Margin="0,0,0,5"/>
+                </StackPanel>
+            </NavigationView.PaneHeader>
+
+
+            <NavigationView.MenuItems>
+
+                <NavigationViewItemSeparator Margin="0,0,0,5"/>
+
+                <NavigationViewItem Tag="recipes" HorizontalAlignment="Stretch">
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Spacing="10">
+                        <FontIcon Glyph="&#xE8A5;" />
+                        <TextBlock Text="Receptek"
+                           FontSize="20"
+                           HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </NavigationViewItem>
+
+                <NavigationViewItem Tag="ingredients" HorizontalAlignment="Stretch">
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Spacing="10">
+                        <FontIcon Glyph="&#xE14C;" />
+                        <TextBlock Text="Összetevők"
+                           FontSize="20"
+                           VerticalAlignment="Center"/>
+                    </StackPanel>
+                </NavigationViewItem>
+
+
+            </NavigationView.MenuItems>
+
+
+            <NavigationView.Content>
+                <Frame x:Name="ContentFrame" />
+            </NavigationView.Content>
+
+        </NavigationView>
+    </Grid>
+</Window>

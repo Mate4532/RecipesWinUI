@@ -1,0 +1,113 @@
+{
+  "Items": {
+    "0": {
+      "Name": "Feh\u00E9rj\u00E9s csokis ban\u00E1nkeny\u00E9r",
+      "Description": "A ban\u00E1nokat t\u00F6rd teljesen p\u00E9pesre. Add hozz\u00E1 a toj\u00E1st, joghurtot, \u00E9des\u00EDt\u0151t, \u00E9s keverd sim\u00E1ra. Egy m\u00E1sik t\u00E1lban keverd \u00F6ssze: feh\u00E9rjepor \u002B zabpehelyliszt \u002B kaka\u00F3por \u002B s\u00FCt\u0151por \u002B s\u00F3. A sz\u00E1raz hozz\u00E1val\u00F3kat \u00F6ntsd a ban\u00E1nos kever\u00E9khez, keverd \u00F6ssze \u00F3vatosan. A t\u00E9szta s\u0171r\u0171bb lesz, mint a norm\u00E1l ban\u00E1nkeny\u00E9r - ez j\u00F3! Tedd egy kisebb keny\u00E9rform\u00E1ba (20-22 cm). 170-175\u00B0C-on s\u00FCsd 30-35 percig. Akkor j\u00F3, ha a belesz\u00FArt t\u0171 majdnem tiszta, a k\u00F6zepe pedig egy picit m\u00E9g nedves. Tipp: ha whey-t haszn\u00E1lsz, ne s\u00FCsd t\u00FAl, mert a tejsav\u00F3 sz\u00E1r\u00EDtja a s\u00FCtiket. Ink\u00E1bb legyen kiss\u00E9 \u0022brownie-jelleg\u0171\u0022.",
+      "Ingredients": [
+        {
+          "ID": 0,
+          "IsUnitPiece": true,
+          "Amount": 2
+        },
+        {
+          "ID": 1,
+          "IsUnitPiece": true,
+          "Amount": 1
+        },
+        {
+          "ID": 2,
+          "IsUnitPiece": false,
+          "Amount": 120
+        },
+        {
+          "ID": 3,
+          "IsUnitPiece": false,
+          "Amount": 40
+        },
+        {
+          "ID": 4,
+          "IsUnitPiece": false,
+          "Amount": 60
+        },
+        {
+          "ID": 5,
+          "IsUnitPiece": false,
+          "Amount": 50
+        },
+        {
+          "ID": 6,
+          "IsUnitPiece": false,
+          "Amount": 15
+        },
+        {
+          "ID": 7,
+          "IsUnitPiece": false,
+          "Amount": 5
+        },
+        {
+          "ID": 8,
+          "IsUnitPiece": false,
+          "Amount": 2
+        },
+        {
+          "ID": 9,
+          "IsUnitPiece": false,
+          "Amount": 3
+        },
+        {
+          "ID": 10,
+          "IsUnitPiece": false,
+          "Amount": 20
+        }
+      ]
+    },
+    "1": {
+      "Name": "L\u00E1vas\u00FCti",
+      "Description": "A csokit mikr\u00F3ban olvaszd meg, keverd a joghurthoz. Add hozz\u00E1 a toj\u00E1st, \u00E9des\u00EDt\u0151t, kaka\u00F3port, s\u00F3t, van\u00EDli\u00E1t. Sim\u00EDtsd k\u00E9t kism\u00E9ret\u0171 h\u0151\u00E1ll\u00F3 form\u00E1ba. 200\u00B0C-on 6-8 perc. Azonnal bor\u00EDtsd ki - \u00EDgy lesz \u0022foly\u00F3s\u0022.",
+      "Ingredients": [
+        {
+          "ID": 1,
+          "IsUnitPiece": true,
+          "Amount": 1
+        },
+        {
+          "ID": 3,
+          "IsUnitPiece": false,
+          "Amount": 20
+        },
+        {
+          "ID": 10,
+          "IsUnitPiece": false,
+          "Amount": 10
+        },
+        {
+          "ID": 6,
+          "IsUnitPiece": false,
+          "Amount": 10
+        },
+        {
+          "ID": 2,
+          "IsUnitPiece": false,
+          "Amount": 20
+        },
+        {
+          "ID": 8,
+          "IsUnitPiece": false,
+          "Amount": 1
+        },
+        {
+          "ID": 9,
+          "IsUnitPiece": false,
+          "Amount": 1
+        },
+        {
+          "ID": 5,
+          "IsUnitPiece": false,
+          "Amount": 3
+        }
+      ]
+    }
+  },
+  "FreeIds": [],
+  "NextId": 2
+}

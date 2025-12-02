@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RecipesWinUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "RecipesWinUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

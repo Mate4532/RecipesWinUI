@@ -1,0 +1,122 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>RecipesWinUI</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <PublishProfile>win-$(Platform).pubxml</PublishProfile>
+    <UseWinUI>true</UseWinUI>
+    <WinUISDKReferences>false</WinUISDKReferences>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <!--
+    Defining the "Msix" ProjectCapability here allows the Single-project MSIX Packaging
+    Tools extension to be activated for this project even if the Windows App SDK Nuget
+    package has not yet been restored.
+  -->
+  <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.7175" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.251106002" />
+  </ItemGroup>
+
+  <!--
+    Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution
+    Explorer "Package and Publish" context menu entry to be enabled for this project even if
+    the Windows App SDK Nuget package has not yet been restored.
+  -->
+  <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+  </PropertyGroup>
+
+  <!-- Publish Properties -->
+  <PropertyGroup>
+    <PublishReadyToRun Condition="'$(Configuration)' == 'Debug'">False</PublishReadyToRun>
+    <PublishReadyToRun Condition="'$(Configuration)' != 'Debug'">True</PublishReadyToRun>
+    <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
+    <PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="C:\Users\user\.nuget\packages\microsoft.windowsappsdk.foundation\1.8.251104000\buildTransitive\..\include\DeploymentManagerAutoInitializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Controls\ActionToolbar.xaml" />
+    <None Remove="Controls\CommonCard.xaml" />
+    <None Remove="Controls\ConfirmPopup.xaml" />
+    <None Remove="Controls\IngredientControls\IngredientToolbar.xaml" />
+    <None Remove="Views\AddIngredientPage.xaml" />
+    <None Remove="Views\AddRecipePage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\AddRecipePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\CommonCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\ActionToolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\AddIngredientPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\EditIngredientPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ViewResources\ConfirmPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\ConfirmPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\IngredientControls\IngredientToolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>

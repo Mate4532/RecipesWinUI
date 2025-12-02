@@ -1,0 +1,48 @@
+<UserControl
+    x:Class="RecipesWinUI.Controls.ActionToolbar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Border Background="#FFF5E4C1"
+            BorderBrush="#FFD7C0A1"
+            BorderThickness="2"
+            CornerRadius="12"
+            Padding="12"
+            VerticalAlignment="Top">
+
+        <StackPanel Orientation="Horizontal"
+                    Spacing="12"
+                    HorizontalAlignment="Center">
+
+            <Button x:Name="EditButton"
+                    CornerRadius="6"
+                    Padding="12,6"
+                    Background="#FFE5C99F"
+                    Foreground="#FF4B3A2E">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <FontIcon Glyph="&#xE70F;" Foreground="#FF4B3A2E"/>
+                    <TextBlock Text="{x:Bind EditButtonText, Mode=OneWay}"/>
+                </StackPanel>
+            </Button>
+
+            <AutoSuggestBox x:Name="SearchBox"
+                            Width="260"
+                            PlaceholderText="{x:Bind SearchPlaceholderText, Mode=OneWay}">
+                <AutoSuggestBox.QueryIcon>
+                    <SymbolIcon Symbol="Find" Foreground="#FF4B3A2E"/>
+                </AutoSuggestBox.QueryIcon>
+            </AutoSuggestBox>
+
+            <Button x:Name="AddButton"
+                    CornerRadius="6"
+                    Padding="12,6">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <FontIcon Glyph="&#xE710;" Foreground="#FF4B3A2E"/>
+                    <TextBlock Text="{x:Bind AddButtonText, Mode=OneWay}"/>
+                </StackPanel>
+            </Button>
+
+        </StackPanel>
+
+    </Border>
+</UserControl>

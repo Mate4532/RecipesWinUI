@@ -1,0 +1,10 @@
+App.xbf
+Controls\ActionToolbar.xbf
+Controls\CommonCard.xbf
+Controls\ConfirmPopup.xbf
+Views\AddIngredientPage.xbf
+Views\AddRecipePage.xbf
+Views\EditIngredientPage.xbf
+Views\IngredientListPage.xbf
+Views\MainWindow.xbf
+Views\RecipeListPage.xbf

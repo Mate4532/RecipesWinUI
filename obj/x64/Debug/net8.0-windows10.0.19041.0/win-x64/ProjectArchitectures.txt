@@ -1,0 +1,1 @@
+D:\projects\Visual Studio projects\RecipesWinUI\RecipesWinUI.csproj;x64

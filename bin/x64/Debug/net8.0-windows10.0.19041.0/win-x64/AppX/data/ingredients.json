@@ -1,0 +1,85 @@
+{
+  "Items": {
+    "0": {
+      "Name": "Ban\u00E1n",
+      "CalorieIn100g": 89,
+      "ProteinIn100g": 1,
+      "CanBeMeasuredInPiece": true,
+      "OnePieceWeigh": 100
+    },
+    "1": {
+      "Name": "Toj\u00E1s",
+      "CalorieIn100g": 143,
+      "ProteinIn100g": 13,
+      "CanBeMeasuredInPiece": true,
+      "OnePieceWeigh": 50
+    },
+    "2": {
+      "Name": "G\u00F6r\u00F6g joghurt",
+      "CalorieIn100g": 59,
+      "ProteinIn100g": 10,
+      "CanBeMeasuredInPiece": false,
+      "OnePieceWeigh": 0
+    },
+    "3": {
+      "Name": "Eritrit",
+      "CalorieIn100g": 0,
+      "ProteinIn100g": 0,
+      "CanBeMeasuredInPiece": false,
+      "OnePieceWeigh": 0
+    },
+    "4": {
+      "Name": "Csokis feh\u00E9rjepor",
+      "CalorieIn100g": 380,
+      "ProteinIn100g": 70,
+      "CanBeMeasuredInPiece": false,
+      "OnePieceWeigh": 0
+    },
+    "5": {
+      "Name": "Zabpehelyliszt",
+      "CalorieIn100g": 389,
+      "ProteinIn100g": 17,
+      "CanBeMeasuredInPiece": false,
+      "OnePieceWeigh": 0
+    },
+    "6": {
+      "Name": "Kaka\u00F3por",
+      "CalorieIn100g": 228,
+      "ProteinIn100g": 20,
+      "CanBeMeasuredInPiece": false,
+      "OnePieceWeigh": 0
+    },
+    "7": {
+      "Name": "S\u00FCt\u0151por",
+      "CalorieIn100g": 53,
+      "ProteinIn100g": 0,
+      "CanBeMeasuredInPiece": false,
+      "OnePieceWeigh": 0
+    },
+    "8": {
+      "Name": "S\u00F3",
+      "CalorieIn100g": 0,
+      "ProteinIn100g": 0,
+      "CanBeMeasuredInPiece": false,
+      "OnePieceWeigh": 0
+    },
+    "9": {
+      "Name": "Van\u00EDlia aroma",
+      "CalorieIn100g": 250,
+      "ProteinIn100g": 0,
+      "CanBeMeasuredInPiece": false,
+      "OnePieceWeigh": 0
+    },
+    "10": {
+      "Name": "\u00C9tcsoki",
+      "CalorieIn100g": 546,
+      "ProteinIn100g": 5,
+      "CanBeMeasuredInPiece": false,
+      "OnePieceWeigh": 0
+    }
+  },
+  "FreeIds": [
+    11
+  ],
+  "NextId": 12
+}
