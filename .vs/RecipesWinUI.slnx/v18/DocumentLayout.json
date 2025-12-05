@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\projects\\Visual Studio projects\\RecipesWinUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D3BA81DF-4985-BE8E-58B5-DD183E25CFCA}|RecipesWinUI.csproj|d:\\projects\\visual studio projects\\recipeswinui\\views\\editrecipepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3BA81DF-4985-BE8E-58B5-DD183E25CFCA}|RecipesWinUI.csproj|solutionrelative:views\\editrecipepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D3BA81DF-4985-BE8E-58B5-DD183E25CFCA}|RecipesWinUI.csproj|d:\\projects\\visual studio projects\\recipeswinui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D3BA81DF-4985-BE8E-58B5-DD183E25CFCA}|RecipesWinUI.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EditRecipePage.xaml.cs",
+              "DocumentMoniker": "D:\\projects\\Visual Studio projects\\RecipesWinUI\\Views\\EditRecipePage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\EditRecipePage.xaml.cs",
+              "ToolTip": "D:\\projects\\Visual Studio projects\\RecipesWinUI\\Views\\EditRecipePage.xaml.cs",
+              "RelativeToolTip": "Views\\EditRecipePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T16:58:41.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\projects\\Visual Studio projects\\RecipesWinUI\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",

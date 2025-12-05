@@ -21,14 +21,14 @@
                            Margin="0,12,0,16"/>
 
                 <controls:ActionToolbar
-                        x:Name="OriginalToolbar"
-                        Margin="12,0,12,0"
-                        EditButtonText="Módosítás"
-                        AddButtonText="Hozzáadás"
-                        SearchPlaceholderText="Recept keresése…"
-                        EditClicked="EditRecipe_Click"
-                        AddClicked="AddRecipe_Click"
-                        SearchTextChanged="SearchRecipe_TextChanged" />
+                    x:Name="OriginalToolbar"
+                    Margin="12,0,12,0"
+                    EditButtonText="Módosítás"
+                    AddButtonText="Hozzáadás"
+                    SearchPlaceholderText="Recept keresése…"
+                    EditClicked="EditRecipe_Click"
+                    AddClicked="AddRecipe_Click"
+                    SearchTextChanged="SearchRecipe_TextChanged" />
 
                 <ListView x:Name="RecipeList"
                           ItemsSource="{Binding Recipes}"

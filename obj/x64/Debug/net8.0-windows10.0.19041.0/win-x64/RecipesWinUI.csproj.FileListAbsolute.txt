@@ -308,3 +308,8 @@ D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0
 D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AddRecipePage.xbf
 D:\projects\Visual Studio projects\RecipesWinUI\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AddRecipePage.xbf
 D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\RecipesWinUI.sourcelink.json
+D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EditRecipePage.g.i.cs
+D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EditRecipePage.g.cs
+D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EditRecipePage.xaml
+D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EditRecipePage.xbf
+D:\projects\Visual Studio projects\RecipesWinUI\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EditRecipePage.xbf
