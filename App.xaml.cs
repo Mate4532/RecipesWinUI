@@ -58,8 +58,6 @@ namespace RecipesWinUI
             services.AddSingleton<RecipeListViewModel>();
             services.AddSingleton<IngredientListViewModel>();
 
-            services.AddTransient<EditIngredientViewModel>();
-
             Services = services.BuildServiceProvider();
         }
     }

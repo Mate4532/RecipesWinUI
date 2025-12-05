@@ -14,21 +14,21 @@
             <StackPanel>
 
                 <TextBlock Text="Receptek"
-                           FontSize="36"
+                           FontSize="44"
                            FontWeight="Bold"
                            Foreground="#FF4B3A2E"
                            HorizontalAlignment="Center"
                            Margin="0,12,0,16"/>
 
                 <controls:ActionToolbar x:ConnectionId='6'
-                    x:Name="OriginalToolbar"
-                    Margin="12,0,12,0"
-                    EditButtonText="Módosítás"
-                    AddButtonText="Hozzáadás"
-                    SearchPlaceholderText="Recept keresése…"
-                                                  
-                                                
-                                                                 />
+                        x:Name="OriginalToolbar"
+                        Margin="12,0,12,0"
+                        EditButtonText="Módosítás"
+                        AddButtonText="Hozzáadás"
+                        SearchPlaceholderText="Recept keresése…"
+                                                      
+                                                    
+                                                                     />
 
                 <ListView x:ConnectionId='7' x:Name="RecipeList"
                           ItemsSource="{Binding Recipes}"
@@ -46,28 +46,28 @@
                         <DataTemplate                                    >
 
                             <controls:CommonCard x:ConnectionId='9'
-                                                           
-                                                                           
-                                                                         
-                                                                      >
+                                                                  
+                                                                                
+                                                                              
+                                                                           >
                                 
                                 <controls:CommonCard.InnerContent>
 
                                     <StackPanel Spacing="4">
 
                                         <TextBlock Text="{Binding Name}"
-                                                       FontSize="22"
+                                                       FontSize="25"
                                                        FontWeight="Bold"
                                                        Foreground="#FF4B3A2E"/>
 
                                         <StackPanel Orientation="Horizontal" Spacing="8">
-                                            <TextBlock Text="Kalória:" Foreground="#FF4B3A2E" FontWeight="SemiBold"/>
-                                            <TextBlock Text="{Binding CalorieInRecipeString}" Foreground="#AA4B3A2E"/>
+                                            <TextBlock Text="Kalória:" Foreground="#FF4B3A2E" FontWeight="SemiBold" FontSize="16"/>
+                                            <TextBlock Text="{Binding CalorieInRecipeString}" Foreground="#AA4B3A2E" FontSize="16"/>
                                         </StackPanel>
 
                                         <StackPanel Orientation="Horizontal" Spacing="8">
-                                            <TextBlock Text="Fehérje:" Foreground="#FF4B3A2E" FontWeight="SemiBold"/>
-                                            <TextBlock Text="{Binding ProteinInRecipeString}" Foreground="#AA4B3A2E"/>
+                                            <TextBlock Text="Fehérje:" Foreground="#FF4B3A2E" FontWeight="SemiBold" FontSize="16"/>
+                                            <TextBlock Text="{Binding ProteinInRecipeString}" Foreground="#AA4B3A2E" FontSize="16"/>
                                         </StackPanel>
                                     </StackPanel>
                                 </controls:CommonCard.InnerContent>
@@ -77,11 +77,11 @@
                                     <StackPanel>
 
                                         <Rectangle Height="1"
-                                                           Fill="#FFD7C0A1"
-                                                           Margin="0,8,0,8"/>
+                                                   Fill="#FFD7C0A1"
+                                                   Margin="0,8,0,8"/>
 
                                         <TextBlock Text="Összetevők:"
-                                                        FontSize="20"
+                                                        FontSize="22"
                                                         FontWeight="SemiBold"
                                                         Foreground="#FF4B3A2E"
                                                         Margin="0,0,0,4"/>
@@ -89,7 +89,7 @@
                                         <ItemsControl ItemsSource="{Binding IngredientLines}">
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
-                                                    <TextBlock TextWrapping="Wrap">
+                                                    <TextBlock TextWrapping="Wrap" FontSize="16">
                                                             <Run Text="     "/>
                                                             <Run Text="{Binding Name}" FontWeight="SemiBold" Foreground="#FF4B3A2E"/>
                                                             <Run Text=": " Foreground="#AA4B3A2E"/>
@@ -100,18 +100,19 @@
                                         </ItemsControl>
 
                                         <Rectangle Height="1"
-                                                        Fill="#FFD7C0A1"
-                                                        Margin="0,15,0,8"/>
+                                                   Fill="#FFD7C0A1"
+                                                   Margin="0,15,0,8"/>
 
                                         <TextBlock Text="Leírás:"
-                                                        FontSize="20"
+                                                        FontSize="22"
                                                         FontWeight="SemiBold"
                                                         Foreground="#FF4B3A2E"
                                                         Margin="0,0,0,4"/>
 
                                         <TextBlock Text="{Binding Description}"
                                                         TextWrapping="Wrap"
-                                                        Foreground="#AA4B3A2E"/>
+                                                        Foreground="#AA4B3A2E"
+                                                        FontSize="16"/>
                                     </StackPanel>
 
                                 </controls:CommonCard.ExpandContent>

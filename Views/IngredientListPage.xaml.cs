@@ -10,7 +10,7 @@ using System.Linq;
 using System.Numerics;
 using Windows.Foundation;
 using Windows.UI;
-using Controls = RecipesWinUI.Controls;
+using Microsoft.UI.Xaml.Navigation;
 
 namespace RecipesWinUI.Views
 {
@@ -18,6 +18,8 @@ namespace RecipesWinUI.Views
     {
         public IngredientListViewModel ViewModel { get; }
         private IngredientItemViewModel? ingredientToDelete;
+        private IngredientItemViewModel? selectedIngredient;
+
         private bool isSticky = false;
         private double stickyThreshold = 0;
 
@@ -35,6 +37,7 @@ namespace RecipesWinUI.Views
 
         public IngredientListPage()
         {
+            NavigationCacheMode = NavigationCacheMode.Required;
             InitializeComponent();
 
             ViewModel = App.Services.GetRequiredService<IngredientListViewModel>();
@@ -79,30 +82,41 @@ namespace RecipesWinUI.Views
             }
         }
 
-        private void CardWrapper_Tapped(object sender, TappedRoutedEventArgs e)
+        private void CardPressed(object sender, PointerRoutedEventArgs e)
         {
             if (sender is FrameworkElement fe && fe.DataContext is IngredientItemViewModel vm)
             {
-                foreach (var item in ViewModel.Ingredients)
+                if (selectedIngredient is not null && selectedIngredient != vm)
                 {
-                    item.IsSelected = item == vm && !item.IsSelected;
-
-                    var container = IngredientList.ContainerFromItem(item) as ListViewItem;
-                    if (container != null)
-                        UpdateCardVisual(item, container);
+                    selectedIngredient.IsSelected = false;
+                    var selectedItemContainer = IngredientList.ContainerFromItem(selectedIngredient) as ListViewItem;
+                    if (selectedItemContainer != null)
+                        UpdateCardVisual(selectedIngredient, selectedItemContainer);
                 }
+
+                if (selectedIngredient == vm)
+                    selectedIngredient = null;
+
+                else
+                    selectedIngredient = vm;
+
+                vm.IsSelected = !vm.IsSelected;
+
+                var container = IngredientList.ContainerFromItem(vm) as ListViewItem;
+                if (container != null)
+                    UpdateCardVisual(vm, container);
 
                 e.Handled = true;
             }
         }
 
-        private void CardWrapper_PointerEntered(object sender, PointerRoutedEventArgs e)
+        private void CardPointerEntered(object sender, PointerRoutedEventArgs e)
         {
             if (sender is CommonCard card)
                 card.DeleteButtonControl.Visibility = Visibility.Visible;
         }
 
-        private void CardWrapper_PointerExited(object sender, PointerRoutedEventArgs e)
+        private void CardPointerExited(object sender, PointerRoutedEventArgs e)
         {
             if (sender is CommonCard card)
                 card.DeleteButtonControl.Visibility = Visibility.Collapsed;

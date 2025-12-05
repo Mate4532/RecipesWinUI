@@ -12,6 +12,7 @@ using System.Linq;
 using System.Numerics;
 using Windows.Foundation;
 using Windows.UI;
+using Microsoft.UI.Xaml.Navigation;
 
 namespace RecipesWinUI.Views
 {
@@ -19,6 +20,7 @@ namespace RecipesWinUI.Views
     {
         public RecipeListViewModel ViewModel { get; }
         private RecipeItemViewModel? recipeToDelete;
+        private RecipeItemViewModel? selectedRecipe;
 
         private bool isSticky = false;
         private double stickyThreshold = 0;
@@ -37,6 +39,7 @@ namespace RecipesWinUI.Views
 
         public RecipeListPage()
         {
+            NavigationCacheMode = NavigationCacheMode.Required;
             InitializeComponent();
 
             ViewModel = App.Services.GetRequiredService<RecipeListViewModel>();
@@ -81,10 +84,24 @@ namespace RecipesWinUI.Views
             }
         }
 
-        private void CardTapped(object sender, TappedRoutedEventArgs e)
+        private void CardPressed(object sender, PointerRoutedEventArgs e)
         {
             if (sender is FrameworkElement fe && fe.DataContext is RecipeItemViewModel vm)
             {
+                if (selectedRecipe is not null && selectedRecipe != vm)
+                {
+                    selectedRecipe.IsExpanded = false;
+                    var selectedItemContainer = RecipeList.ContainerFromItem(selectedRecipe) as ListViewItem;
+                    if (selectedItemContainer != null)
+                        UpdateCardVisual(selectedRecipe, selectedItemContainer);
+                }
+
+                if (selectedRecipe == vm)
+                    selectedRecipe = null;
+
+                else
+                    selectedRecipe = vm;
+
                 vm.IsExpanded = !vm.IsExpanded;
 
                 var container = RecipeList.ContainerFromItem(vm) as ListViewItem;
@@ -115,7 +132,7 @@ namespace RecipesWinUI.Views
 
         private void EditRecipe_Click(object sender, RoutedEventArgs e)
         {
-            var selected = ViewModel.Recipes.FirstOrDefault(i => i.IsExpanded);
+            var selected = selectedRecipe;
 
             if (selected == null)
             {

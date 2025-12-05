@@ -10,15 +10,30 @@ namespace RecipesWinUI.Controls
         {
             InitializeComponent();
 
-            CardWrapper.Tapped += (s, e) => CardTapped?.Invoke(this, e);
-            CardWrapper.PointerEntered += (s, e) => CardPointerEntered?.Invoke(this, e);
-            CardWrapper.PointerExited += (s, e) => CardPointerExited?.Invoke(this, e);
+            CardWrapper.PointerPressed += (s, e) => CardPressedEvent?.Invoke(this, e);
+            CardWrapper.PointerEntered += CardPointerEntered;
+            CardWrapper.PointerExited += CardPointerExited;
+        }
+
+        private void CardPointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            CardPointerEnteredEvent?.Invoke(this, e);
+
+            if (!IsExpanded)
+                DeleteButtonControl.Visibility = Visibility.Visible;
+        }
+
+        private void CardPointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            CardPointerExitedEvent?.Invoke(this, e);
+
+            DeleteButtonControl.Visibility = Visibility.Collapsed;
         }
 
         private void DeleteButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             e.Handled = true;
-            DeleteClicked?.Invoke(this, e);
+            DeleteClickedEvent?.Invoke(this, e);
         }
 
         public UIElement InnerContent
@@ -40,16 +55,16 @@ namespace RecipesWinUI.Controls
             {
                 ExpandHost.Visibility = value ? Visibility.Visible : Visibility.Collapsed;
 
-                DeleteButton.Visibility = value ? Visibility.Collapsed : Visibility.Visible;
+                DeleteButtonControl.Visibility = Visibility.Collapsed;
             }
         }
 
         public FrameworkElement ExpandSectionElement => ExpandHost;
         public Button DeleteButtonControl => DeleteButton;
 
-        public event TappedEventHandler? CardTapped;
-        public event PointerEventHandler? CardPointerEntered;
-        public event PointerEventHandler? CardPointerExited;
-        public event RoutedEventHandler? DeleteClicked;
+        public event PointerEventHandler? CardPressedEvent;
+        public event PointerEventHandler? CardPointerEnteredEvent;
+        public event PointerEventHandler? CardPointerExitedEvent;
+        public event RoutedEventHandler? DeleteClickedEvent;
     }
 }

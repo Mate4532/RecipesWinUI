@@ -10,7 +10,8 @@
                       VerticalScrollBarVisibility="Auto">
 
             <Grid HorizontalAlignment="Center"
-                  Padding="24">
+                  Padding="24"
+                  VerticalAlignment="Center">
 
                 <Border Background="#FFF5E4C1"
                         BorderBrush="#FFD7C0A1"
@@ -21,48 +22,56 @@
 
                     <StackPanel Spacing="20">
 
-                        <TextBlock Text="Recept hozzáadása"
-                                   FontSize="28"
+                        <TextBlock Text="Recept módosítása"
+                                   FontSize="32"
                                    FontWeight="Bold"
                                    HorizontalAlignment="Center"
                                    Foreground="#FF4B3A2E"/>
 
                         <StackPanel>
                             <TextBlock Text="Név"
+                                       Margin="0,0,0,5"
                                        FontWeight="SemiBold"
-                                       Foreground="#FF4B3A2E"/>
+                                       Foreground="#FF4B3A2E"
+                                       FontSize="20"/>
+                            
                             <TextBox Text="{Binding EditedName, Mode=TwoWay}"
                                      PlaceholderText="pl. Rántotta"
-                                     FontSize="18"
+                                     FontSize="16"
                                      BorderThickness="0"
                                      Padding="12,6"/>
                         </StackPanel>
 
                         <StackPanel>
                             <TextBlock Text="Leírás"
+                                       Margin="0,0,0,5"
                                        FontWeight="SemiBold"
-                                       Foreground="#FF4B3A2E"/>
+                                       Foreground="#FF4B3A2E"
+                                       FontSize="20"/>
+                            
                             <TextBox Text="{Binding EditedDescription, Mode=TwoWay}"
                                      PlaceholderText="pl. Keverd össze a tojásokat..."
                                      AcceptsReturn="True"
                                      TextWrapping="Wrap"
                                      Height="120"
-                                     FontSize="18"
+                                     FontSize="16"
                                      BorderThickness="0"
                                      Padding="12,6"/>
                         </StackPanel>
 
                         <StackPanel>
                             <TextBlock Text="Összetevők keresése"
+                                       Margin="0,0,0,5"
                                        FontWeight="SemiBold"
-                                       Foreground="#FF4B3A2E"/>
+                                       Foreground="#FF4B3A2E"
+                                       FontSize="20"/>
 
                             <AutoSuggestBox x:ConnectionId='7' Text="{Binding IngredientSearchText, Mode=TwoWay}"
                                             ItemsSource="{Binding SearchResults}"
                                             PlaceholderText="pl. Tojás"
                                             DisplayMemberPath="Name"
                                                                                          
-                                            FontSize="18"
+                                            FontSize="16"
                                             Padding="12,6"
                                             Style="{StaticResource AutoSuggestBoxListViewStyle}"
                                             ItemContainerStyle="{StaticResource AutoSuggestBoxListViewItemStyle}"/>
@@ -70,8 +79,10 @@
 
                         <StackPanel>
                             <TextBlock Text="Hozzáadott összetevők"
+                                       Margin="0,0,0,5"
                                        FontWeight="SemiBold"
-                                       Foreground="#FF4B3A2E"/>
+                                       Foreground="#FF4B3A2E"
+                                       FontSize="20"/>
 
                             <Border Padding="12"
                                     Background="#FFF5E4C1"
@@ -79,7 +90,7 @@
                                     BorderBrush="#FFBF9C7D"
                                     BorderThickness="2">
 
-                                <Grid Height="160"
+                                <Grid Height="235"
                                       Margin="0,10,0,0">
                                     <ScrollViewer VerticalScrollBarVisibility="Auto">
                                         <ItemsControl ItemsSource="{Binding SelectedIngredients}">
@@ -99,19 +110,23 @@
                                                                        Foreground="#FF4B3A2E"
                                                                        Width="180"
                                                                        TextAlignment="Right"
-                                                                       VerticalAlignment="Center"/>
+                                                                       VerticalAlignment="Center"
+                                                                       FontSize="16"/>
 
                                                             <TextBox Text="{Binding Amount, Mode=TwoWay}"
                                                                      Width="100"
                                                                      Margin="12,0"
-                                                                     Padding="10"/>
+                                                                     Padding="10"
+                                                                     FontSize="16"/>
 
                                                             <TextBlock Text="g"
                                                                        VerticalAlignment="Center"
                                                                        HorizontalAlignment="Left"
                                                                        TextAlignment="Left"
-                                                                       Foreground="#AA4B3A2E"
-                                                                       Margin="0,0,10,0"/>
+                                                                       Foreground="#FF4B3A2E"
+                                                                       Margin="0,0,10,0"
+                                                                       FontSize="16"
+                                                                       FontWeight="SemiBold"/>
 
                                                             <Button x:ConnectionId='6' Content="X"
                                                                                                   
@@ -141,7 +156,8 @@
                                     Width="120"
                                     Padding="12,6"
                                     CornerRadius="6"
-                                                        />
+                                                        
+                                    FontSize="16"/>
 
                             <Button x:ConnectionId='4' Content="Mentés"
                                     Width="120"
@@ -149,7 +165,8 @@
                                     Background="#FFE5C99F"
                                     Foreground="#FF4B3A2E"
                                     CornerRadius="6"
-                                                      />
+                                                      
+                                    FontSize="16"/>
                         </StackPanel>
 
                     </StackPanel>

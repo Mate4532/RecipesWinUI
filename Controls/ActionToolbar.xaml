@@ -18,7 +18,9 @@
                     CornerRadius="6"
                     Padding="12,6"
                     Background="#FFE5C99F"
-                    Foreground="#FF4B3A2E">
+                    Foreground="#FF4B3A2E"
+                    FontSize="18">
+                
                 <StackPanel Orientation="Horizontal" Spacing="8">
                     <FontIcon Glyph="&#xE70F;" Foreground="#FF4B3A2E"/>
                     <TextBlock Text="{x:Bind EditButtonText, Mode=OneWay}"/>
@@ -27,7 +29,8 @@
 
             <AutoSuggestBox x:Name="SearchBox"
                             Width="260"
-                            PlaceholderText="{x:Bind SearchPlaceholderText, Mode=OneWay}">
+                            PlaceholderText="{x:Bind SearchPlaceholderText, Mode=OneWay}"
+                            FontSize="18">
                 <AutoSuggestBox.QueryIcon>
                     <SymbolIcon Symbol="Find" Foreground="#FF4B3A2E"/>
                 </AutoSuggestBox.QueryIcon>
@@ -35,7 +38,8 @@
 
             <Button x:Name="AddButton"
                     CornerRadius="6"
-                    Padding="12,6">
+                    Padding="12,6"
+                    FontSize="18">
                 <StackPanel Orientation="Horizontal" Spacing="8">
                     <FontIcon Glyph="&#xE710;" Foreground="#FF4B3A2E"/>
                     <TextBlock Text="{x:Bind AddButtonText, Mode=OneWay}"/>

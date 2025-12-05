@@ -16,7 +16,8 @@
                       VerticalScrollBarVisibility="Auto">
 
             <Grid HorizontalAlignment="Center"
-                  Padding="24">
+                  Padding="24"
+                  VerticalAlignment="Center">
 
                 <Border Background="#FFF5E4C1"
                         BorderBrush="#FFD7C0A1"
@@ -37,36 +38,42 @@
 
                         <StackPanel>
                             <TextBlock Text="Név"
+                                       Margin="0,0,0,5"
                                        Foreground="#FF4B3A2E"
-                                       FontWeight="SemiBold"/>
+                                       FontWeight="SemiBold"
+                                       FontSize="20"/>
 
                             <TextBox PlaceholderText="Összetevő neve"
                                      Text="{Binding EditedName, Mode=TwoWay}"
-                                     FontSize="18"
+                                     FontSize="16"
                                      BorderThickness="0"
                                      Padding="12,6"/>
                         </StackPanel>
 
                         <StackPanel>
                             <TextBlock Text="Kalória / 100g"
+                                       Margin="0,0,0,5"
                                        Foreground="#FF4B3A2E"
-                                       FontWeight="SemiBold"/>
+                                       FontWeight="SemiBold"
+                                       FontSize="20"/>
 
                             <TextBox Text="{Binding EditedCalorie, Mode=TwoWay}"
                                      PlaceholderText="pl. 52"
-                                     FontSize="18"
+                                     FontSize="16"
                                      BorderThickness="0"
                                      Padding="12,6"/>
                         </StackPanel>
 
                         <StackPanel>
                             <TextBlock Text="Fehérje / 100g"
+                                       Margin="0,0,0,5"
                                        Foreground="#FF4B3A2E"
-                                       FontWeight="SemiBold"/>
+                                       FontWeight="SemiBold"
+                                       FontSize="20"/>
 
                             <TextBox Text="{Binding EditedProtein, Mode=TwoWay}"
                                      PlaceholderText="pl. 13"
-                                     FontSize="18"
+                                     FontSize="16"
                                      BorderThickness="0"
                                      Padding="12,6"/>
                         </StackPanel>
@@ -78,25 +85,31 @@
                             <TextBlock Text="Miben mérhető az összetevő?"
                                        FontWeight="SemiBold"
                                        Foreground="#FF4B3A2E"
-                                       Margin="0,5,0,0"/>
+                                       Margin="0,5,0,0"
+                                       FontSize="20"/>
 
                             <ComboBox x:Name="MeasurementComboBox"
                                       Width="140"
                                       VerticalAlignment="Center"
-                                      Margin="10,0,0,0"
+                                      Margin="10,5,0,0"
                                       ItemsSource="{Binding Units}"
                                       DisplayMemberPath="Label"
-                                      SelectedItem="{Binding SelectedUnit, Mode=TwoWay}" />
+                                      SelectedItem="{Binding SelectedUnit, Mode=TwoWay}"
+                                      FontSize="16"/>
 
                         </StackPanel>
 
-                        <StackPanel Margin="0,0,0,-10">
+                        <StackPanel>
                             <TextBlock Text="Mérhető darabban?"
+                                       Margin="0,0,0,10"
                                        Foreground="#FF4B3A2E"
-                                       FontWeight="SemiBold"/>
+                                       FontWeight="SemiBold"
+                                       FontSize="20"/>
+                            
                             <ToggleSwitch IsOn="{Binding EditedCanBeMeasuredInPiece, Mode=TwoWay}"
                                           OffContent="Nem"
-                                          OnContent="Igen"/>
+                                          OnContent="Igen"
+                                          FontSize="16"/>
                         </StackPanel>
 
                         <Grid Visibility="{Binding EditedCanBeMeasuredInPiece, Converter={StaticResource BooleanToVisibilityConverter}}">
@@ -106,13 +119,15 @@
                             </Grid.RowDefinitions>
 
                             <TextBlock Text="Darab súlya (g)"
+                                       Margin="0,0,0,5"
                                        Foreground="#FF4B3A2E"
-                                       FontWeight="SemiBold"/>
+                                       FontWeight="SemiBold"
+                                       FontSize="20"/>
 
                             <TextBox Grid.Row="1"
                                      Text="{Binding EditedOnePieceWeigh, Mode=TwoWay}"
                                      PlaceholderText="pl. 47"
-                                     FontSize="18"
+                                     FontSize="16"
                                      BorderThickness="0"
                                      Padding="12,6"/>
                         </Grid>
@@ -125,7 +140,8 @@
                                     Width="120"
                                     Padding="12,6"
                                     CornerRadius="6"
-                                    Click="Cancel_Click"/>
+                                    Click="Cancel_Click"
+                                    FontSize="18"/>
 
                             <Button Content="Mentés"
                                     Width="120"
@@ -133,7 +149,8 @@
                                     Background="#FFE5C99F"
                                     Foreground="#FF4B3A2E"
                                     CornerRadius="6"
-                                    Click="Save_Click"/>
+                                    Click="Save_Click"
+                                    FontSize="18"/>
 
                         </StackPanel>
 

@@ -27,8 +27,8 @@ namespace RecipesWinUI.ViewModels
         }
 
         public string Name => Recipe.Name;
-        public string CalorieInRecipeString => $"{recs.GetRecipeCalorieOrProtein(Recipe, true)}kcal";
-        public string ProteinInRecipeString => $"{recs.GetRecipeCalorieOrProtein(Recipe, false)}g";
+        public string CalorieInRecipeString => $"{recs.GetRecipeCalorieOrProtein(Recipe, true)} kcal";
+        public string ProteinInRecipeString => $"{recs.GetRecipeCalorieOrProtein(Recipe, false)} g";
         public string Description => Recipe.Description;
         public IList<IngredientLine> IngredientsInRecipeString => IngredientLines;
 

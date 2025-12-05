@@ -45,7 +45,8 @@
                             Foreground="#FF4B3A2E"
                             CornerRadius="6"
                             Padding="8,4"
-                                                />
+                                                
+                            FontSize="18"/>
 
                     <Button x:ConnectionId='6' x:Name="ConfirmButton"
                             Content="Törlés"
@@ -54,7 +55,8 @@
                             Foreground="White"
                             CornerRadius="6"
                             Padding="8,4"
-                                                 />
+                                                 
+                            FontSize="18"/>
                 </StackPanel>
 
 
