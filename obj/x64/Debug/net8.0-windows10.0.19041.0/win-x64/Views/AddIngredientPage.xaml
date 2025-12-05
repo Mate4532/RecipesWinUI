@@ -10,129 +10,140 @@
         <converters:InvertBooleanConverter x:Key="InvertBooleanConverter"/>
     </Page.Resources>
 
-    <Grid Background="#FFE8D8B8" Padding="24">
+    <Grid>
 
-        <Border Background="#FFF5E4C1"
-                BorderBrush="#FFD7C0A1"
-                BorderThickness="2"
-                CornerRadius="12"
-                Padding="24"
-                Width="500"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center">
+        <ScrollViewer Background="#FFE8D8B8"
+                      VerticalScrollBarVisibility="Auto">
 
-            <StackPanel Spacing="20">
+            <Grid HorizontalAlignment="Center"
+                  Padding="24">
 
-                <TextBlock Text="Összetevő hozzáadása"
-                           FontSize="28"
-                           FontWeight="Bold"
-                           HorizontalAlignment="Center"
-                           Foreground="#FF4B3A2E"/>
+                <Border Background="#FFF5E4C1"
+                        BorderBrush="#FFD7C0A1"
+                        BorderThickness="2"
+                        CornerRadius="12"
+                        Padding="24"
+                        Width="500"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
 
-                <StackPanel>
-                    <TextBlock Text="Név"
-                               FontWeight="SemiBold"
-                               Foreground="#FF4B3A2E"/>
+                    <StackPanel Spacing="20">
 
-                    <TextBox Text="{Binding EditedName, Mode=TwoWay}"
-                             PlaceholderText="pl. Alma"
-                             FontSize="18"
-                             BorderThickness="0"
-                             Padding="12,6"/>
-                </StackPanel>
+                        <TextBlock Text="Összetevő hozzáadása"
+                                   FontSize="28"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   Foreground="#FF4B3A2E"/>
 
-                <StackPanel>
-                    <TextBlock Text="Kalória / 100g"
-                               FontWeight="SemiBold"
-                               Foreground="#FF4B3A2E"/>
+                        <StackPanel>
+                            <TextBlock Text="Név"
+                                       FontWeight="SemiBold"
+                                       Foreground="#FF4B3A2E"/>
 
-                    <TextBox Text="{Binding EditedCalorie, Mode=TwoWay}"
-                             PlaceholderText="pl. 52"
-                             FontSize="18"
-                             BorderThickness="0"
-                             Padding="12,6"/>
-                </StackPanel>
+                            <TextBox Text="{Binding EditedName, Mode=TwoWay}"
+                                     PlaceholderText="pl. Alma"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     Padding="12,6"/>
+                        </StackPanel>
 
-                <StackPanel>
-                    <TextBlock Text="Fehérje / 100g"
-                               FontWeight="SemiBold"
-                               Foreground="#FF4B3A2E"/>
+                        <StackPanel>
+                            <TextBlock Text="Kalória / 100g"
+                                       FontWeight="SemiBold"
+                                       Foreground="#FF4B3A2E"/>
 
-                    <TextBox Text="{Binding EditedProtein, Mode=TwoWay}"
-                             PlaceholderText="pl. 13"
-                             FontSize="18"
-                             BorderThickness="0"
-                             Padding="12,6"/>
-                </StackPanel>
+                            <TextBox Text="{Binding EditedCalorie, Mode=TwoWay}"
+                                     PlaceholderText="pl. 52"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     Padding="12,6"/>
+                        </StackPanel>
 
-                <StackPanel Orientation="Horizontal"
-                            Spacing="12"
-                            VerticalAlignment="Center">
+                        <StackPanel>
+                            <TextBlock Text="Fehérje / 100g"
+                                       FontWeight="SemiBold"
+                                       Foreground="#FF4B3A2E"/>
 
-                    <TextBlock Text="Miben mérhető az összetevő?"
-                           FontWeight="SemiBold"
-                           Foreground="#FF4B3A2E"
-                           Margin="0,5,0,0"/>
+                            <TextBox Text="{Binding EditedProtein, Mode=TwoWay}"
+                                     PlaceholderText="pl. 13"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     Padding="12,6"/>
+                        </StackPanel>
 
-                    <ComboBox x:ConnectionId='5' x:Name="MeasurementComboBox"
-                              Width="140"
-                              VerticalAlignment="Center"
-                              Margin="10,0,0,0"
-                              ItemsSource="{Binding Units}"
-                              DisplayMemberPath="Label"
-                              SelectedValuePath="Value"
-                              SelectedValue="{Binding EditedMeasurementUnit, Mode=TwoWay}"
-                                                                 />
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="12"
+                                    VerticalAlignment="Center">
 
-                </StackPanel>
+                            <TextBlock Text="Miben mérhető az összetevő?"
+                                       FontWeight="SemiBold"
+                                       Foreground="#FF4B3A2E"
+                                       Margin="0,5,0,0"/>
 
-                <StackPanel Margin="0,0,0,-10">
-                    <TextBlock Text="Mérhető darabban?"
-                               Foreground="#FF4B3A2E"
-                               FontWeight="SemiBold"/>
-                    <ToggleSwitch IsOn="{Binding EditedCanBeMeasuredInPiece, Mode=TwoWay}"
-                                  OffContent="Nem"
-                                  OnContent="Igen"/>
-                </StackPanel>
+                            <ComboBox x:ConnectionId='5' x:Name="MeasurementComboBox"
+                                      Width="140"
+                                      VerticalAlignment="Center"
+                                      Margin="10,0,0,0"
+                                      ItemsSource="{Binding Units}"
+                                      DisplayMemberPath="Label"
+                                      SelectedValuePath="Value"
+                                      SelectedValue="{Binding EditedMeasurementUnit, Mode=TwoWay}"
+                                                                         />
 
-                <Grid Visibility="{Binding EditedCanBeMeasuredInPiece, Converter={StaticResource BooleanToVisibilityConverter}}">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
+                        </StackPanel>
 
-                    <TextBlock Text="Darab súlya (g)"
-                               Foreground="#FF4B3A2E"
-                               FontWeight="SemiBold"/>
+                        <StackPanel Margin="0,0,0,-10">
+                            <TextBlock Text="Mérhető darabban?"
+                                       Foreground="#FF4B3A2E"
+                                       FontWeight="SemiBold"/>
 
-                    <TextBox Grid.Row="1"
-                             Text="{Binding EditedOnePieceWeigh, Mode=TwoWay}"
-                             PlaceholderText="pl. 47"
-                             FontSize="18"
-                             BorderThickness="0"
-                             Padding="12,6"/>
-                    </Grid>
+                            <ToggleSwitch IsOn="{Binding EditedCanBeMeasuredInPiece, Mode=TwoWay}"
+                                          OffContent="Nem"
+                                          OnContent="Igen"/>
+                        </StackPanel>
 
-                <StackPanel Orientation="Horizontal"
-                            HorizontalAlignment="Center"
-                            Spacing="20">
+                        <Grid Visibility="{Binding EditedCanBeMeasuredInPiece, Converter={StaticResource BooleanToVisibilityConverter}}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
 
-                    <Button x:ConnectionId='3' Content="Mégse"
-                            Width="120"
-                            Padding="12,6"
-                            CornerRadius="6"
-                                                />
+                            <TextBlock Text="Darab súlya (g)"
+                                       Foreground="#FF4B3A2E"
+                                       FontWeight="SemiBold"/>
 
-                    <Button x:ConnectionId='4' Content="Hozzáadás"
-                            Width="120"
-                            Padding="12,6"
-                            Background="#FFE5C99F"
-                            Foreground="#FF4B3A2E"
-                            CornerRadius="6"
-                                              />
-                </StackPanel>
-            </StackPanel>
-        </Border>
+                            <TextBox Grid.Row="1"
+                                     Text="{Binding EditedOnePieceWeigh, Mode=TwoWay}"
+                                     PlaceholderText="pl. 47"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     Padding="12,6"/>
+                        </Grid>
+
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Center"
+                                    Spacing="20">
+
+                            <Button x:ConnectionId='3' Content="Mégse"
+                                    Width="120"
+                                    Padding="12,6"
+                                    CornerRadius="6"
+                                                        />
+
+                            <Button x:ConnectionId='4' Content="Hozzáadás"
+                                    Width="120"
+                                    Padding="12,6"
+                                    Background="#FFE5C99F"
+                                    Foreground="#FF4B3A2E"
+                                    CornerRadius="6"
+                                                      />
+                        </StackPanel>
+
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+        </ScrollViewer>
 
         <controls:ConfirmPopup x:ConnectionId='2' x:Name="Popup"/>
 

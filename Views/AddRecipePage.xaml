@@ -56,13 +56,16 @@
                             <TextBlock Text="Összetevők keresése"
                                        FontWeight="SemiBold"
                                        Foreground="#FF4B3A2E"/>
+
                             <AutoSuggestBox Text="{Binding IngredientSearchText, Mode=TwoWay}"
                                             ItemsSource="{Binding SearchResults}"
                                             PlaceholderText="pl. Tojás"
                                             DisplayMemberPath="Name"
                                             SuggestionChosen="IngredientSuggestionChosen"
                                             FontSize="18"
-                                            Padding="12,6"/>
+                                            Padding="12,6">
+                                
+                            </AutoSuggestBox>
                         </StackPanel>
 
                         <StackPanel>
