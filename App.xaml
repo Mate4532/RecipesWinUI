@@ -13,28 +13,6 @@
                 <controls:XamlControlsResources />
             </ResourceDictionary.MergedDictionaries>
 
-            <Style TargetType="ComboBox">
-                <Setter Property="Foreground" Value="#FFFFFF" />
-                <Setter Property="Background" Value="#BF311A" />
-                <Setter Property="BorderBrush" Value="#58585A" />
-                <Setter Property="FontWeight" Value="Normal"/>
-                <Setter Property="BorderThickness" Value="1" />
-                <Setter Property="MaxDropDownHeight" Value="200"/>
-                <Setter Property="MinWidth" Value="200"/>
-                <Setter Property="Padding" Value="10"/>
-                <Setter Property="ItemContainerStyle">
-                    <Setter.Value>
-                        <Style TargetType="ComboBoxItem">
-                            <Setter Property="Background" Value="#7E1416"/>
-                            <Setter Property="Foreground" Value="#FFFFFF"/>
-                            <Setter Property="BorderThickness" Value="0"/>
-                            <Setter Property="VerticalAlignment" Value="Bottom"/>
-                            <Setter Property="Padding" Value="10"/>
-                        </Style>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-
             <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 
             <SolidColorBrush x:Key="ScrollBarTrackForeground" 
