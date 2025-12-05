@@ -63,7 +63,9 @@
                              Color="#FFF5E4C1" />
             <SolidColorBrush x:Key="AutoSuggestBoxSuggestionsListBorderBrush" 
                              Color="#FFD7C0A1" />
-            
+            <SolidColorBrush x:Key="AutoSuggestBoxSuggestionForeground"
+                             Color="#FF4B3A2E" />
+
             <SolidColorBrush x:Key="ScrollBarTrackForeground" 
                              Color="#FFBF9C7D"/>
             <SolidColorBrush x:Key="ScrollBarTrackBackground" 

@@ -29,7 +29,7 @@
     <AppXManifest Include="D:\projects\Visual Studio projects\RecipesWinUI\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-12-05T17:01:31.149</Modified>
+      <Modified>2025-12-05T17:11:49.898</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -39,11 +39,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>RecipesWinUI.exe</PackagePath>
-      <Modified>2025-12-05T17:01:30.149</Modified>
+      <Modified>2025-12-05T17:11:49.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\RecipesWinUI.dll">
       <PackagePath>RecipesWinUI.dll</PackagePath>
-      <Modified>2025-12-05T17:01:30.139</Modified>
+      <Modified>2025-12-05T17:11:49.578</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.22\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -971,7 +971,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\Visual Studio projects\RecipesWinUI\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-12-05T17:01:30.842</Modified>
+      <Modified>2025-12-05T17:11:49.670</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
