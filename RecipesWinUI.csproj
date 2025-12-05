@@ -68,6 +68,12 @@
     <None Remove="Controls\IngredientControls\IngredientToolbar.xaml" />
     <None Remove="Views\AddIngredientPage.xaml" />
     <None Remove="Views\AddRecipePage.xaml" />
+    <None Remove="Views\EditRecipePage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\EditRecipePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\AddRecipePage.xaml">

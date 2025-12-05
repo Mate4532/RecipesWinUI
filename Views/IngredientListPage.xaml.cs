@@ -190,7 +190,7 @@ namespace RecipesWinUI.Views
             Frame.Navigate(typeof(EditIngredientPage), vm);
         }
 
-        private async void AddIngredient_Click(object sender, RoutedEventArgs e)
+        private void AddIngredient_Click(object sender, RoutedEventArgs e)
         {
             var vm = new AddIngredientViewModel();
             Frame.Navigate(typeof(AddIngredientPage), vm);

@@ -107,39 +107,30 @@ namespace RecipesWinUI.Views
                 card.DeleteButtonControl.Visibility = Visibility.Collapsed;
         }
 
-        private async void AddRecipe_Click(object sender, RoutedEventArgs e)
+        private void AddRecipe_Click(object sender, RoutedEventArgs e)
         {
             var vm = new AddRecipeViewModel();
             Frame.Navigate(typeof(AddRecipePage), vm);
         }
 
-        private async void EditRecipe_Click(object sender, RoutedEventArgs e)
+        private void EditRecipe_Click(object sender, RoutedEventArgs e)
         {
-            var selected = ViewModel.Recipes.FirstOrDefault(r => r.IsExpanded);
+            var selected = ViewModel.Recipes.FirstOrDefault(i => i.IsExpanded);
 
             if (selected == null)
             {
-                var dlg = new ContentDialog
-                {
-                    Title = "Nincs kiválasztva",
-                    Content = "Válassz ki egy receptet!",
-                    CloseButtonText = "OK",
-                    XamlRoot = this.XamlRoot
-                };
-
-                await dlg.ShowAsync();
+                Popup.ShowInfo(
+                    "Nincs receptet kiválasztva",
+                    "Válassz ki egy receptet!",
+                    "Ok"
+                );
                 return;
             }
 
-            var edit = new ContentDialog
-            {
-                Title = "Recept módosítása",
-                Content = "Itt lesz majd a módosító felület.",
-                CloseButtonText = "Bezár",
-                XamlRoot = this.XamlRoot
-            };
+            var recipe = selected.Recipe;
+            var vm = new EditRecipeViewModel(recipe);
 
-            await edit.ShowAsync();
+            Frame.Navigate(typeof(EditRecipePage), vm);
         }
 
         private void SearchRecipe_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)

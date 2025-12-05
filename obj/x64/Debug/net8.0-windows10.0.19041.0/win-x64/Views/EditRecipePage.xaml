@@ -1,0 +1,164 @@
+﻿<Page
+    x:Class="RecipesWinUI.Views.EditRecipePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:RecipesWinUI.Controls">
+
+    <Grid>
+
+        <ScrollViewer Background="#FFE8D8B8"
+                      VerticalScrollBarVisibility="Auto">
+
+            <Grid HorizontalAlignment="Center"
+                  Padding="24">
+
+                <Border Background="#FFF5E4C1"
+                        BorderBrush="#FFD7C0A1"
+                        BorderThickness="2"
+                        CornerRadius="12"
+                        Padding="24"
+                        Width="600">
+
+                    <StackPanel Spacing="20">
+
+                        <TextBlock Text="Recept hozzáadása"
+                                   FontSize="28"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   Foreground="#FF4B3A2E"/>
+
+                        <StackPanel>
+                            <TextBlock Text="Név"
+                                       FontWeight="SemiBold"
+                                       Foreground="#FF4B3A2E"/>
+                            <TextBox Text="{Binding EditedName, Mode=TwoWay}"
+                                     PlaceholderText="pl. Rántotta"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     Padding="12,6"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <TextBlock Text="Leírás"
+                                       FontWeight="SemiBold"
+                                       Foreground="#FF4B3A2E"/>
+                            <TextBox Text="{Binding EditedDescription, Mode=TwoWay}"
+                                     PlaceholderText="pl. Keverd össze a tojásokat..."
+                                     AcceptsReturn="True"
+                                     TextWrapping="Wrap"
+                                     Height="120"
+                                     FontSize="18"
+                                     BorderThickness="0"
+                                     Padding="12,6"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <TextBlock Text="Összetevők keresése"
+                                       FontWeight="SemiBold"
+                                       Foreground="#FF4B3A2E"/>
+
+                            <AutoSuggestBox x:ConnectionId='7' Text="{Binding IngredientSearchText, Mode=TwoWay}"
+                                            ItemsSource="{Binding SearchResults}"
+                                            PlaceholderText="pl. Tojás"
+                                            DisplayMemberPath="Name"
+                                                                                         
+                                            FontSize="18"
+                                            Padding="12,6"
+                                            Style="{StaticResource AutoSuggestBoxListViewStyle}"
+                                            ItemContainerStyle="{StaticResource AutoSuggestBoxListViewItemStyle}"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <TextBlock Text="Hozzáadott összetevők"
+                                       FontWeight="SemiBold"
+                                       Foreground="#FF4B3A2E"/>
+
+                            <Border Padding="12"
+                                    Background="#FFF5E4C1"
+                                    CornerRadius="8"
+                                    BorderBrush="#FFBF9C7D"
+                                    BorderThickness="2">
+
+                                <Grid Height="160"
+                                      Margin="0,10,0,0">
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                        <ItemsControl ItemsSource="{Binding SelectedIngredients}">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Border Padding="12"
+                                                            Margin="0,0,0,8"
+                                                            Background="#FFF5E4C1"
+                                                            CornerRadius="8"
+                                                            BorderBrush="#FFD7C0A1"
+                                                            BorderThickness="2">
+
+                                                        <StackPanel Orientation="Horizontal">
+
+                                                            <TextBlock Text="{Binding Name}"
+                                                                       FontWeight="SemiBold"
+                                                                       Foreground="#FF4B3A2E"
+                                                                       Width="180"
+                                                                       TextAlignment="Right"
+                                                                       VerticalAlignment="Center"/>
+
+                                                            <TextBox Text="{Binding Amount, Mode=TwoWay}"
+                                                                     Width="100"
+                                                                     Margin="12,0"
+                                                                     Padding="10"/>
+
+                                                            <TextBlock Text="g"
+                                                                       VerticalAlignment="Center"
+                                                                       HorizontalAlignment="Left"
+                                                                       TextAlignment="Left"
+                                                                       Foreground="#AA4B3A2E"
+                                                                       Margin="0,0,10,0"/>
+
+                                                            <Button x:ConnectionId='6' Content="X"
+                                                                                                  
+                                                                    Background="#CC3B3B"
+                                                                    Foreground="White"
+                                                                    Width="40"
+                                                                    Height="40"
+                                                                    CornerRadius="20"/>
+                                                        </StackPanel>
+
+                                                    </Border>
+
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </ScrollViewer>
+                                </Grid>
+                            </Border>
+
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Center"
+                                    Spacing="20">
+
+                            <Button x:ConnectionId='3' Content="Mégse"
+                                    Width="120"
+                                    Padding="12,6"
+                                    CornerRadius="6"
+                                                        />
+
+                            <Button x:ConnectionId='4' Content="Hozzáadás"
+                                    Width="120"
+                                    Padding="12,6"
+                                    Background="#FFE5C99F"
+                                    Foreground="#FF4B3A2E"
+                                    CornerRadius="6"
+                                                      />
+                        </StackPanel>
+
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </ScrollViewer>
+
+        <controls:ConfirmPopup x:ConnectionId='2' x:Name="Popup"/>
+    </Grid>
+
+</Page>
+

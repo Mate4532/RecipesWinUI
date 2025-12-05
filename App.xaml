@@ -15,6 +15,55 @@
 
             <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 
+            <Style x:Key="AutoSuggestBoxListViewStyle"
+                   TargetType="ListView">
+                <Setter Property="Background" Value="#FFF5E4C1" />
+                <Setter Property="BorderBrush" Value="#FFD7C0A1" />
+            </Style>
+
+
+            <Style x:Key="AutoSuggestBoxListViewItemStyle"
+                    TargetType="ListViewItem">
+
+                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ListViewItem">
+                            <ListViewItemPresenter
+                                Content="{TemplateBinding Content}"
+                                
+                                HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Padding="{TemplateBinding Padding}"
+                                MinHeight="{TemplateBinding MinHeight}"
+                                Margin="{TemplateBinding Margin}"
+                                ContentMargin="12,4,12,4"
+
+                                Background="#FFF5E4C1"
+                                Foreground="#FF4B3A2E"
+
+                                PointerOverBackground="#FFF1DAB0"
+                                PointerOverForeground="#FF4B3A2E"
+                                PointerOverBorderBrush="Transparent"
+
+                                PressedBackground="#FFE5C99F"
+
+                                SelectedBackground="#FFE5C99F"
+                                SelectedForeground="#FF4B3A2E"
+                                
+                                SelectionCheckMarkVisualEnabled="False"/>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <SolidColorBrush x:Key="AutoSuggestBoxSuggestionsListBackground" 
+                             Color="#FFF5E4C1" />
+            <SolidColorBrush x:Key="AutoSuggestBoxSuggestionsListBorderBrush" 
+                             Color="#FFD7C0A1" />
+            
             <SolidColorBrush x:Key="ScrollBarTrackForeground" 
                              Color="#FFBF9C7D"/>
             <SolidColorBrush x:Key="ScrollBarTrackBackground" 

@@ -31,7 +31,7 @@ namespace RecipesWinUI.Views
             Frame.GoBack();
         }
 
-        private async void Save_Click(object sender, RoutedEventArgs e)
+        private void Save_Click(object sender, RoutedEventArgs e)
         {
             if (ViewModel == null)
                 return;

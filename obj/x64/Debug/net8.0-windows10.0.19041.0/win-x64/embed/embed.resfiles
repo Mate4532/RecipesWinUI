@@ -5,6 +5,7 @@ Controls\ConfirmPopup.xbf
 Views\AddIngredientPage.xbf
 Views\AddRecipePage.xbf
 Views\EditIngredientPage.xbf
+Views\EditRecipePage.xbf
 Views\IngredientListPage.xbf
 Views\MainWindow.xbf
 Views\RecipeListPage.xbf

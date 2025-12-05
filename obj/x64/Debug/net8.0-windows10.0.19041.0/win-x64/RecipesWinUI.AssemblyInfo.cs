@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipesWinUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+061e1d9585ead76ab13b46767407105ff151a745")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipesWinUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecipesWinUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
