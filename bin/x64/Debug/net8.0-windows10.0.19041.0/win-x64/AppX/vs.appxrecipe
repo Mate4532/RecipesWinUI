@@ -29,21 +29,21 @@
     <AppXManifest Include="D:\projects\Visual Studio projects\RecipesWinUI\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-12-05T16:59:29.189</Modified>
+      <Modified>2025-12-05T17:01:31.149</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\projects\Visual Studio projects\RecipesWinUI\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\RecipesWinUI.runtimeconfig.json">
       <PackagePath>RecipesWinUI.runtimeconfig.json</PackagePath>
-      <Modified>2025-12-05T16:59:28.579</Modified>
+      <Modified>2025-12-05T17:01:30.649</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>RecipesWinUI.exe</PackagePath>
-      <Modified>2025-12-05T16:59:27.842</Modified>
+      <Modified>2025-12-05T17:01:30.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\Visual Studio projects\RecipesWinUI\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\RecipesWinUI.dll">
       <PackagePath>RecipesWinUI.dll</PackagePath>
-      <Modified>2025-12-05T16:59:27.826</Modified>
+      <Modified>2025-12-05T17:01:30.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.22\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -935,7 +935,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\Visual Studio projects\RecipesWinUI\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\RecipesWinUI.deps.json">
       <PackagePath>RecipesWinUI.deps.json</PackagePath>
-      <Modified>2025-12-05T16:59:28.549</Modified>
+      <Modified>2025-12-05T17:01:30.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\Visual Studio projects\RecipesWinUI\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -971,7 +971,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\Visual Studio projects\RecipesWinUI\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-12-05T16:59:28.804</Modified>
+      <Modified>2025-12-05T17:01:30.842</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -226,129 +226,131 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[60];
+            _typeNameTable = new string[61];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Boolean";
             _typeNameTable[4] = "RecipesWinUI.Converters.BooleanToVisibilityConverter";
-            _typeNameTable[5] = "RecipesWinUI.Controls.ActionToolbar";
-            _typeNameTable[6] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[7] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
-            _typeNameTable[8] = "String";
-            _typeNameTable[9] = "RecipesWinUI.Controls.CommonCard";
-            _typeNameTable[10] = "Microsoft.UI.Xaml.UIElement";
-            _typeNameTable[11] = "Microsoft.UI.Xaml.FrameworkElement";
-            _typeNameTable[12] = "Microsoft.UI.Xaml.Controls.Button";
-            _typeNameTable[13] = "RecipesWinUI.Controls.ConfirmPopup";
-            _typeNameTable[14] = "RecipesWinUI.Converters.InvertBooleanConverter";
-            _typeNameTable[15] = "RecipesWinUI.Views.AddIngredientPage";
-            _typeNameTable[16] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[17] = "AddIngredientViewModel";
-            _typeNameTable[18] = "RecipesWinUI.Views.AddRecipePage";
-            _typeNameTable[19] = "AddRecipeViewModel";
-            _typeNameTable[20] = "RecipesWinUI.Views.EditIngredientPage";
-            _typeNameTable[21] = "EditIngredientViewModel";
-            _typeNameTable[22] = "RecipesWinUI.Views.EditRecipePage";
-            _typeNameTable[23] = "RecipesWinUI.ViewModels.EditRecipeViewModel";
-            _typeNameTable[24] = "RecipesWinUI.Views.IngredientListPage";
-            _typeNameTable[25] = "RecipesWinUI.ViewModels.IngredientListViewModel";
-            _typeNameTable[26] = "Microsoft.UI.Xaml.Media.MicaBackdrop";
-            _typeNameTable[27] = "Microsoft.UI.Xaml.Media.SystemBackdrop";
-            _typeNameTable[28] = "Microsoft.UI.Composition.SystemBackdrops.MicaKind";
-            _typeNameTable[29] = "System.Enum";
-            _typeNameTable[30] = "System.ValueType";
-            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.NavigationView";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
-            _typeNameTable[35] = "System.Collections.Generic.IList`1<Object>";
-            _typeNameTable[36] = "Double";
-            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
-            _typeNameTable[38] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[39] = "Microsoft.UI.Xaml.Style";
-            _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
-            _typeNameTable[43] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
-            _typeNameTable[44] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
-            _typeNameTable[45] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
-            _typeNameTable[46] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[47] = "Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator";
-            _typeNameTable[48] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
-            _typeNameTable[49] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
-            _typeNameTable[50] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[51] = "Microsoft.UI.Xaml.Controls.InfoBadge";
-            _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[53] = "RecipesWinUI.MainWindow";
-            _typeNameTable[54] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[55] = "RecipesWinUI.Views.RecipeListPage";
-            _typeNameTable[56] = "RecipesWinUI.ViewModels.RecipeListViewModel";
-            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[58] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[59] = "Int32";
+            _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.ListViewItem";
+            _typeNameTable[6] = "RecipesWinUI.Controls.ActionToolbar";
+            _typeNameTable[7] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[8] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "RecipesWinUI.Controls.CommonCard";
+            _typeNameTable[11] = "Microsoft.UI.Xaml.UIElement";
+            _typeNameTable[12] = "Microsoft.UI.Xaml.FrameworkElement";
+            _typeNameTable[13] = "Microsoft.UI.Xaml.Controls.Button";
+            _typeNameTable[14] = "RecipesWinUI.Controls.ConfirmPopup";
+            _typeNameTable[15] = "RecipesWinUI.Converters.InvertBooleanConverter";
+            _typeNameTable[16] = "RecipesWinUI.Views.AddIngredientPage";
+            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[18] = "AddIngredientViewModel";
+            _typeNameTable[19] = "RecipesWinUI.Views.AddRecipePage";
+            _typeNameTable[20] = "AddRecipeViewModel";
+            _typeNameTable[21] = "RecipesWinUI.Views.EditIngredientPage";
+            _typeNameTable[22] = "EditIngredientViewModel";
+            _typeNameTable[23] = "RecipesWinUI.Views.EditRecipePage";
+            _typeNameTable[24] = "RecipesWinUI.ViewModels.EditRecipeViewModel";
+            _typeNameTable[25] = "RecipesWinUI.Views.IngredientListPage";
+            _typeNameTable[26] = "RecipesWinUI.ViewModels.IngredientListViewModel";
+            _typeNameTable[27] = "Microsoft.UI.Xaml.Media.MicaBackdrop";
+            _typeNameTable[28] = "Microsoft.UI.Xaml.Media.SystemBackdrop";
+            _typeNameTable[29] = "Microsoft.UI.Composition.SystemBackdrops.MicaKind";
+            _typeNameTable[30] = "System.Enum";
+            _typeNameTable[31] = "System.ValueType";
+            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
+            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
+            _typeNameTable[36] = "System.Collections.Generic.IList`1<Object>";
+            _typeNameTable[37] = "Double";
+            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
+            _typeNameTable[39] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[40] = "Microsoft.UI.Xaml.Style";
+            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.StyleSelector";
+            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[43] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
+            _typeNameTable[44] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
+            _typeNameTable[45] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
+            _typeNameTable[46] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
+            _typeNameTable[47] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[48] = "Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator";
+            _typeNameTable[49] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
+            _typeNameTable[50] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
+            _typeNameTable[51] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.InfoBadge";
+            _typeNameTable[53] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[54] = "RecipesWinUI.MainWindow";
+            _typeNameTable[55] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[56] = "RecipesWinUI.Views.RecipeListPage";
+            _typeNameTable[57] = "RecipesWinUI.ViewModels.RecipeListViewModel";
+            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[59] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[60] = "Int32";
 
-            _typeTable = new global::System.Type[60];
+            _typeTable = new global::System.Type[61];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Boolean);
             _typeTable[4] = typeof(global::RecipesWinUI.Converters.BooleanToVisibilityConverter);
-            _typeTable[5] = typeof(global::RecipesWinUI.Controls.ActionToolbar);
-            _typeTable[6] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[7] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
-            _typeTable[8] = typeof(global::System.String);
-            _typeTable[9] = typeof(global::RecipesWinUI.Controls.CommonCard);
-            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.UIElement);
-            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
-            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
-            _typeTable[13] = typeof(global::RecipesWinUI.Controls.ConfirmPopup);
-            _typeTable[14] = typeof(global::RecipesWinUI.Converters.InvertBooleanConverter);
-            _typeTable[15] = typeof(global::RecipesWinUI.Views.AddIngredientPage);
-            _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[17] = typeof(global::AddIngredientViewModel);
-            _typeTable[18] = typeof(global::RecipesWinUI.Views.AddRecipePage);
-            _typeTable[19] = typeof(global::AddRecipeViewModel);
-            _typeTable[20] = typeof(global::RecipesWinUI.Views.EditIngredientPage);
-            _typeTable[21] = typeof(global::EditIngredientViewModel);
-            _typeTable[22] = typeof(global::RecipesWinUI.Views.EditRecipePage);
-            _typeTable[23] = typeof(global::RecipesWinUI.ViewModels.EditRecipeViewModel);
-            _typeTable[24] = typeof(global::RecipesWinUI.Views.IngredientListPage);
-            _typeTable[25] = typeof(global::RecipesWinUI.ViewModels.IngredientListViewModel);
-            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop);
-            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Media.SystemBackdrop);
-            _typeTable[28] = typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind);
-            _typeTable[29] = typeof(global::System.Enum);
-            _typeTable[30] = typeof(global::System.ValueType);
-            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
-            _typeTable[35] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
-            _typeTable[36] = typeof(global::System.Double);
-            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
-            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Style);
-            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
-            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
-            _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
-            _typeTable[44] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
-            _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
-            _typeTable[46] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[47] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator);
-            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
-            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
-            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[51] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
-            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[53] = typeof(global::RecipesWinUI.MainWindow);
-            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[55] = typeof(global::RecipesWinUI.Views.RecipeListPage);
-            _typeTable[56] = typeof(global::RecipesWinUI.ViewModels.RecipeListViewModel);
-            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[58] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[59] = typeof(global::System.Int32);
+            _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.ListViewItem);
+            _typeTable[6] = typeof(global::RecipesWinUI.Controls.ActionToolbar);
+            _typeTable[7] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[8] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::RecipesWinUI.Controls.CommonCard);
+            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.UIElement);
+            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
+            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
+            _typeTable[14] = typeof(global::RecipesWinUI.Controls.ConfirmPopup);
+            _typeTable[15] = typeof(global::RecipesWinUI.Converters.InvertBooleanConverter);
+            _typeTable[16] = typeof(global::RecipesWinUI.Views.AddIngredientPage);
+            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[18] = typeof(global::AddIngredientViewModel);
+            _typeTable[19] = typeof(global::RecipesWinUI.Views.AddRecipePage);
+            _typeTable[20] = typeof(global::AddRecipeViewModel);
+            _typeTable[21] = typeof(global::RecipesWinUI.Views.EditIngredientPage);
+            _typeTable[22] = typeof(global::EditIngredientViewModel);
+            _typeTable[23] = typeof(global::RecipesWinUI.Views.EditRecipePage);
+            _typeTable[24] = typeof(global::RecipesWinUI.ViewModels.EditRecipeViewModel);
+            _typeTable[25] = typeof(global::RecipesWinUI.Views.IngredientListPage);
+            _typeTable[26] = typeof(global::RecipesWinUI.ViewModels.IngredientListViewModel);
+            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop);
+            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Media.SystemBackdrop);
+            _typeTable[29] = typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind);
+            _typeTable[30] = typeof(global::System.Enum);
+            _typeTable[31] = typeof(global::System.ValueType);
+            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
+            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
+            _typeTable[36] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
+            _typeTable[37] = typeof(global::System.Double);
+            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
+            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Style);
+            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
+            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
+            _typeTable[44] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
+            _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
+            _typeTable[46] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
+            _typeTable[47] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator);
+            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
+            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
+            _typeTable[51] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
+            _typeTable[53] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[54] = typeof(global::RecipesWinUI.MainWindow);
+            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[56] = typeof(global::RecipesWinUI.Views.RecipeListPage);
+            _typeTable[57] = typeof(global::RecipesWinUI.ViewModels.RecipeListViewModel);
+            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[59] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[60] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -385,65 +387,65 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
         private object Activate_4_BooleanToVisibilityConverter() { return new global::RecipesWinUI.Converters.BooleanToVisibilityConverter(); }
-        private object Activate_5_ActionToolbar() { return new global::RecipesWinUI.Controls.ActionToolbar(); }
-        private object Activate_9_CommonCard() { return new global::RecipesWinUI.Controls.CommonCard(); }
-        private object Activate_13_ConfirmPopup() { return new global::RecipesWinUI.Controls.ConfirmPopup(); }
-        private object Activate_14_InvertBooleanConverter() { return new global::RecipesWinUI.Converters.InvertBooleanConverter(); }
-        private object Activate_15_AddIngredientPage() { return new global::RecipesWinUI.Views.AddIngredientPage(); }
-        private object Activate_17_AddIngredientViewModel() { return new global::AddIngredientViewModel(); }
-        private object Activate_18_AddRecipePage() { return new global::RecipesWinUI.Views.AddRecipePage(); }
-        private object Activate_19_AddRecipeViewModel() { return new global::AddRecipeViewModel(); }
-        private object Activate_20_EditIngredientPage() { return new global::RecipesWinUI.Views.EditIngredientPage(); }
-        private object Activate_22_EditRecipePage() { return new global::RecipesWinUI.Views.EditRecipePage(); }
-        private object Activate_24_IngredientListPage() { return new global::RecipesWinUI.Views.IngredientListPage(); }
-        private object Activate_26_MicaBackdrop() { return new global::Microsoft.UI.Xaml.Media.MicaBackdrop(); }
-        private object Activate_31_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
-        private object Activate_45_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
-        private object Activate_47_NavigationViewItemSeparator() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator(); }
-        private object Activate_49_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
-        private object Activate_51_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
-        private object Activate_53_MainWindow() { return new global::RecipesWinUI.MainWindow(); }
-        private object Activate_55_RecipeListPage() { return new global::RecipesWinUI.Views.RecipeListPage(); }
-        private object Activate_56_RecipeListViewModel() { return new global::RecipesWinUI.ViewModels.RecipeListViewModel(); }
-        private object Activate_57_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_6_ActionToolbar() { return new global::RecipesWinUI.Controls.ActionToolbar(); }
+        private object Activate_10_CommonCard() { return new global::RecipesWinUI.Controls.CommonCard(); }
+        private object Activate_14_ConfirmPopup() { return new global::RecipesWinUI.Controls.ConfirmPopup(); }
+        private object Activate_15_InvertBooleanConverter() { return new global::RecipesWinUI.Converters.InvertBooleanConverter(); }
+        private object Activate_16_AddIngredientPage() { return new global::RecipesWinUI.Views.AddIngredientPage(); }
+        private object Activate_18_AddIngredientViewModel() { return new global::AddIngredientViewModel(); }
+        private object Activate_19_AddRecipePage() { return new global::RecipesWinUI.Views.AddRecipePage(); }
+        private object Activate_20_AddRecipeViewModel() { return new global::AddRecipeViewModel(); }
+        private object Activate_21_EditIngredientPage() { return new global::RecipesWinUI.Views.EditIngredientPage(); }
+        private object Activate_23_EditRecipePage() { return new global::RecipesWinUI.Views.EditRecipePage(); }
+        private object Activate_25_IngredientListPage() { return new global::RecipesWinUI.Views.IngredientListPage(); }
+        private object Activate_27_MicaBackdrop() { return new global::Microsoft.UI.Xaml.Media.MicaBackdrop(); }
+        private object Activate_32_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
+        private object Activate_46_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
+        private object Activate_48_NavigationViewItemSeparator() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator(); }
+        private object Activate_50_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
+        private object Activate_52_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
+        private object Activate_54_MainWindow() { return new global::RecipesWinUI.MainWindow(); }
+        private object Activate_56_RecipeListPage() { return new global::RecipesWinUI.Views.RecipeListPage(); }
+        private object Activate_57_RecipeListViewModel() { return new global::RecipesWinUI.ViewModels.RecipeListViewModel(); }
+        private object Activate_58_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_BooleanToVisibilityConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Converters.BooleanToVisibilityConverter).TypeHandle);
-        private void StaticInitializer_5_ActionToolbar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Controls.ActionToolbar).TypeHandle);
-        private void StaticInitializer_9_CommonCard() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Controls.CommonCard).TypeHandle);
-        private void StaticInitializer_13_ConfirmPopup() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Controls.ConfirmPopup).TypeHandle);
-        private void StaticInitializer_14_InvertBooleanConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Converters.InvertBooleanConverter).TypeHandle);
-        private void StaticInitializer_15_AddIngredientPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.AddIngredientPage).TypeHandle);
-        private void StaticInitializer_17_AddIngredientViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::AddIngredientViewModel).TypeHandle);
-        private void StaticInitializer_18_AddRecipePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.AddRecipePage).TypeHandle);
-        private void StaticInitializer_19_AddRecipeViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::AddRecipeViewModel).TypeHandle);
-        private void StaticInitializer_20_EditIngredientPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.EditIngredientPage).TypeHandle);
-        private void StaticInitializer_21_EditIngredientViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::EditIngredientViewModel).TypeHandle);
-        private void StaticInitializer_22_EditRecipePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.EditRecipePage).TypeHandle);
-        private void StaticInitializer_23_EditRecipeViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.ViewModels.EditRecipeViewModel).TypeHandle);
-        private void StaticInitializer_24_IngredientListPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.IngredientListPage).TypeHandle);
-        private void StaticInitializer_25_IngredientListViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.ViewModels.IngredientListViewModel).TypeHandle);
-        private void StaticInitializer_26_MicaBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop).TypeHandle);
-        private void StaticInitializer_28_MicaKind() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind).TypeHandle);
-        private void StaticInitializer_29_Enum() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Enum).TypeHandle);
-        private void StaticInitializer_30_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
-        private void StaticInitializer_31_NavigationView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationView).TypeHandle);
-        private void StaticInitializer_33_NavigationViewPaneDisplayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode).TypeHandle);
-        private void StaticInitializer_34_NavigationViewBackButtonVisible() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible).TypeHandle);
-        private void StaticInitializer_35_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::System.Object>).TypeHandle);
-        private void StaticInitializer_37_NavigationViewDisplayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode).TypeHandle);
-        private void StaticInitializer_42_NavigationViewOverflowLabelMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode).TypeHandle);
-        private void StaticInitializer_43_NavigationViewSelectionFollowsFocus() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus).TypeHandle);
-        private void StaticInitializer_44_NavigationViewShoulderNavigationEnabled() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled).TypeHandle);
-        private void StaticInitializer_45_NavigationViewTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings).TypeHandle);
-        private void StaticInitializer_47_NavigationViewItemSeparator() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator).TypeHandle);
-        private void StaticInitializer_48_NavigationViewItemBase() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase).TypeHandle);
-        private void StaticInitializer_49_NavigationViewItem() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem).TypeHandle);
-        private void StaticInitializer_51_InfoBadge() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge).TypeHandle);
-        private void StaticInitializer_53_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.MainWindow).TypeHandle);
-        private void StaticInitializer_55_RecipeListPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.RecipeListPage).TypeHandle);
-        private void StaticInitializer_56_RecipeListViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.ViewModels.RecipeListViewModel).TypeHandle);
-        private void StaticInitializer_57_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_58_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_6_ActionToolbar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Controls.ActionToolbar).TypeHandle);
+        private void StaticInitializer_10_CommonCard() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Controls.CommonCard).TypeHandle);
+        private void StaticInitializer_14_ConfirmPopup() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Controls.ConfirmPopup).TypeHandle);
+        private void StaticInitializer_15_InvertBooleanConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Converters.InvertBooleanConverter).TypeHandle);
+        private void StaticInitializer_16_AddIngredientPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.AddIngredientPage).TypeHandle);
+        private void StaticInitializer_18_AddIngredientViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::AddIngredientViewModel).TypeHandle);
+        private void StaticInitializer_19_AddRecipePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.AddRecipePage).TypeHandle);
+        private void StaticInitializer_20_AddRecipeViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::AddRecipeViewModel).TypeHandle);
+        private void StaticInitializer_21_EditIngredientPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.EditIngredientPage).TypeHandle);
+        private void StaticInitializer_22_EditIngredientViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::EditIngredientViewModel).TypeHandle);
+        private void StaticInitializer_23_EditRecipePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.EditRecipePage).TypeHandle);
+        private void StaticInitializer_24_EditRecipeViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.ViewModels.EditRecipeViewModel).TypeHandle);
+        private void StaticInitializer_25_IngredientListPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.IngredientListPage).TypeHandle);
+        private void StaticInitializer_26_IngredientListViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.ViewModels.IngredientListViewModel).TypeHandle);
+        private void StaticInitializer_27_MicaBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop).TypeHandle);
+        private void StaticInitializer_29_MicaKind() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind).TypeHandle);
+        private void StaticInitializer_30_Enum() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Enum).TypeHandle);
+        private void StaticInitializer_31_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
+        private void StaticInitializer_32_NavigationView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationView).TypeHandle);
+        private void StaticInitializer_34_NavigationViewPaneDisplayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode).TypeHandle);
+        private void StaticInitializer_35_NavigationViewBackButtonVisible() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible).TypeHandle);
+        private void StaticInitializer_36_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::System.Object>).TypeHandle);
+        private void StaticInitializer_38_NavigationViewDisplayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode).TypeHandle);
+        private void StaticInitializer_43_NavigationViewOverflowLabelMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode).TypeHandle);
+        private void StaticInitializer_44_NavigationViewSelectionFollowsFocus() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus).TypeHandle);
+        private void StaticInitializer_45_NavigationViewShoulderNavigationEnabled() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled).TypeHandle);
+        private void StaticInitializer_46_NavigationViewTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings).TypeHandle);
+        private void StaticInitializer_48_NavigationViewItemSeparator() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator).TypeHandle);
+        private void StaticInitializer_49_NavigationViewItemBase() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase).TypeHandle);
+        private void StaticInitializer_50_NavigationViewItem() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem).TypeHandle);
+        private void StaticInitializer_52_InfoBadge() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge).TypeHandle);
+        private void StaticInitializer_54_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.MainWindow).TypeHandle);
+        private void StaticInitializer_56_RecipeListPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.Views.RecipeListPage).TypeHandle);
+        private void StaticInitializer_57_RecipeListViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::RecipesWinUI.ViewModels.RecipeListViewModel).TypeHandle);
+        private void StaticInitializer_58_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_59_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -451,13 +453,13 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_35_IList(object instance, object item)
+        private void VectorAdd_36_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_58_IList(object instance, object item)
+        private void VectorAdd_59_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -503,10 +505,14 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  RecipesWinUI.Controls.ActionToolbar
+            case 5:   //  Microsoft.UI.Xaml.Controls.ListViewItem
+                xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  RecipesWinUI.Controls.ActionToolbar
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_5_ActionToolbar;
-                userType.StaticInitializer = StaticInitializer_5_ActionToolbar;
+                userType.Activator = Activate_6_ActionToolbar;
+                userType.StaticInitializer = StaticInitializer_6_ActionToolbar;
                 userType.AddMemberName("SearchBoxControl");
                 userType.AddMemberName("EditButtonText");
                 userType.AddMemberName("AddButtonText");
@@ -515,22 +521,22 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 6:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 7:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
+            case 8:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  String
+            case 9:   //  String
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  RecipesWinUI.Controls.CommonCard
+            case 10:   //  RecipesWinUI.Controls.CommonCard
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_9_CommonCard;
-                userType.StaticInitializer = StaticInitializer_9_CommonCard;
+                userType.Activator = Activate_10_CommonCard;
+                userType.StaticInitializer = StaticInitializer_10_CommonCard;
                 userType.AddMemberName("InnerContent");
                 userType.AddMemberName("ExpandContent");
                 userType.AddMemberName("IsExpanded");
@@ -540,159 +546,159 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  Microsoft.UI.Xaml.UIElement
+            case 11:   //  Microsoft.UI.Xaml.UIElement
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Microsoft.UI.Xaml.FrameworkElement
+            case 12:   //  Microsoft.UI.Xaml.FrameworkElement
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  Microsoft.UI.Xaml.Controls.Button
+            case 13:   //  Microsoft.UI.Xaml.Controls.Button
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  RecipesWinUI.Controls.ConfirmPopup
+            case 14:   //  RecipesWinUI.Controls.ConfirmPopup
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_13_ConfirmPopup;
-                userType.StaticInitializer = StaticInitializer_13_ConfirmPopup;
+                userType.Activator = Activate_14_ConfirmPopup;
+                userType.StaticInitializer = StaticInitializer_14_ConfirmPopup;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  RecipesWinUI.Converters.InvertBooleanConverter
+            case 15:   //  RecipesWinUI.Converters.InvertBooleanConverter
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_14_InvertBooleanConverter;
-                userType.StaticInitializer = StaticInitializer_14_InvertBooleanConverter;
+                userType.Activator = Activate_15_InvertBooleanConverter;
+                userType.StaticInitializer = StaticInitializer_15_InvertBooleanConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  RecipesWinUI.Views.AddIngredientPage
+            case 16:   //  RecipesWinUI.Views.AddIngredientPage
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_AddIngredientPage;
-                userType.StaticInitializer = StaticInitializer_15_AddIngredientPage;
+                userType.Activator = Activate_16_AddIngredientPage;
+                userType.StaticInitializer = StaticInitializer_16_AddIngredientPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Microsoft.UI.Xaml.Controls.Page
+            case 17:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  AddIngredientViewModel
+            case 18:   //  AddIngredientViewModel
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_17_AddIngredientViewModel;
+                userType.StaticInitializer = StaticInitializer_18_AddIngredientViewModel;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  RecipesWinUI.Views.AddRecipePage
+            case 19:   //  RecipesWinUI.Views.AddRecipePage
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_AddRecipePage;
-                userType.StaticInitializer = StaticInitializer_18_AddRecipePage;
+                userType.Activator = Activate_19_AddRecipePage;
+                userType.StaticInitializer = StaticInitializer_19_AddRecipePage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  AddRecipeViewModel
+            case 20:   //  AddRecipeViewModel
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_19_AddRecipeViewModel;
+                userType.StaticInitializer = StaticInitializer_20_AddRecipeViewModel;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  RecipesWinUI.Views.EditIngredientPage
+            case 21:   //  RecipesWinUI.Views.EditIngredientPage
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_EditIngredientPage;
-                userType.StaticInitializer = StaticInitializer_20_EditIngredientPage;
+                userType.Activator = Activate_21_EditIngredientPage;
+                userType.StaticInitializer = StaticInitializer_21_EditIngredientPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  EditIngredientViewModel
+            case 22:   //  EditIngredientViewModel
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_21_EditIngredientViewModel;
+                userType.StaticInitializer = StaticInitializer_22_EditIngredientViewModel;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  RecipesWinUI.Views.EditRecipePage
+            case 23:   //  RecipesWinUI.Views.EditRecipePage
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_EditRecipePage;
-                userType.StaticInitializer = StaticInitializer_22_EditRecipePage;
+                userType.Activator = Activate_23_EditRecipePage;
+                userType.StaticInitializer = StaticInitializer_23_EditRecipePage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  RecipesWinUI.ViewModels.EditRecipeViewModel
+            case 24:   //  RecipesWinUI.ViewModels.EditRecipeViewModel
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_23_EditRecipeViewModel;
+                userType.StaticInitializer = StaticInitializer_24_EditRecipeViewModel;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  RecipesWinUI.Views.IngredientListPage
+            case 25:   //  RecipesWinUI.Views.IngredientListPage
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_IngredientListPage;
-                userType.StaticInitializer = StaticInitializer_24_IngredientListPage;
+                userType.Activator = Activate_25_IngredientListPage;
+                userType.StaticInitializer = StaticInitializer_25_IngredientListPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  RecipesWinUI.ViewModels.IngredientListViewModel
+            case 26:   //  RecipesWinUI.ViewModels.IngredientListViewModel
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_25_IngredientListViewModel;
+                userType.StaticInitializer = StaticInitializer_26_IngredientListViewModel;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  Microsoft.UI.Xaml.Media.MicaBackdrop
+            case 27:   //  Microsoft.UI.Xaml.Media.MicaBackdrop
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Media.SystemBackdrop"));
-                userType.Activator = Activate_26_MicaBackdrop;
-                userType.StaticInitializer = StaticInitializer_26_MicaBackdrop;
+                userType.Activator = Activate_27_MicaBackdrop;
+                userType.StaticInitializer = StaticInitializer_27_MicaBackdrop;
                 userType.AddMemberName("Kind");
                 xamlType = userType;
                 break;
 
-            case 27:   //  Microsoft.UI.Xaml.Media.SystemBackdrop
+            case 28:   //  Microsoft.UI.Xaml.Media.SystemBackdrop
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  Microsoft.UI.Composition.SystemBackdrops.MicaKind
+            case 29:   //  Microsoft.UI.Composition.SystemBackdrops.MicaKind
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_28_MicaKind;
+                userType.StaticInitializer = StaticInitializer_29_MicaKind;
                 userType.AddEnumValue("Base", global::Microsoft.UI.Composition.SystemBackdrops.MicaKind.Base);
                 userType.AddEnumValue("BaseAlt", global::Microsoft.UI.Composition.SystemBackdrops.MicaKind.BaseAlt);
                 xamlType = userType;
                 break;
 
-            case 29:   //  System.Enum
+            case 30:   //  System.Enum
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_29_Enum;
+                userType.StaticInitializer = StaticInitializer_30_Enum;
                 xamlType = userType;
                 break;
 
-            case 30:   //  System.ValueType
+            case 31:   //  System.ValueType
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_30_ValueType;
+                userType.StaticInitializer = StaticInitializer_31_ValueType;
                 xamlType = userType;
                 break;
 
-            case 31:   //  Microsoft.UI.Xaml.Controls.NavigationView
+            case 32:   //  Microsoft.UI.Xaml.Controls.NavigationView
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_31_NavigationView;
-                userType.StaticInitializer = StaticInitializer_31_NavigationView;
+                userType.Activator = Activate_32_NavigationView;
+                userType.StaticInitializer = StaticInitializer_32_NavigationView;
                 userType.AddMemberName("PaneDisplayMode");
                 userType.AddMemberName("AlwaysShowHeader");
                 userType.AddMemberName("IsSettingsVisible");
@@ -733,13 +739,13 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Controls.ContentControl
+            case 33:   //  Microsoft.UI.Xaml.Controls.ContentControl
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
+            case 34:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_33_NavigationViewPaneDisplayMode;
+                userType.StaticInitializer = StaticInitializer_34_NavigationViewPaneDisplayMode;
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Auto);
                 userType.AddEnumValue("Left", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Left);
                 userType.AddEnumValue("Top", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Top);
@@ -748,106 +754,106 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 34:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
+            case 35:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_34_NavigationViewBackButtonVisible;
+                userType.StaticInitializer = StaticInitializer_35_NavigationViewBackButtonVisible;
                 userType.AddEnumValue("Collapsed", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Collapsed);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Visible);
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Auto);
                 xamlType = userType;
                 break;
 
-            case 35:   //  System.Collections.Generic.IList`1<Object>
+            case 36:   //  System.Collections.Generic.IList`1<Object>
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_35_IList;
-                userType.CollectionAdd = VectorAdd_35_IList;
+                userType.StaticInitializer = StaticInitializer_36_IList;
+                userType.CollectionAdd = VectorAdd_36_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Double
+            case 37:   //  Double
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 37:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
+            case 38:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_37_NavigationViewDisplayMode;
+                userType.StaticInitializer = StaticInitializer_38_NavigationViewDisplayMode;
                 userType.AddEnumValue("Minimal", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Minimal);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Compact);
                 userType.AddEnumValue("Expanded", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Expanded);
                 xamlType = userType;
                 break;
 
-            case 38:   //  Microsoft.UI.Xaml.DataTemplate
+            case 39:   //  Microsoft.UI.Xaml.DataTemplate
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 39:   //  Microsoft.UI.Xaml.Style
+            case 40:   //  Microsoft.UI.Xaml.Style
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 40:   //  Microsoft.UI.Xaml.Controls.StyleSelector
+            case 41:   //  Microsoft.UI.Xaml.Controls.StyleSelector
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 41:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
+            case 42:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 42:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
+            case 43:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_42_NavigationViewOverflowLabelMode;
+                userType.StaticInitializer = StaticInitializer_43_NavigationViewOverflowLabelMode;
                 userType.AddEnumValue("MoreLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.MoreLabel);
                 userType.AddEnumValue("NoLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.NoLabel);
                 xamlType = userType;
                 break;
 
-            case 43:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
+            case 44:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_43_NavigationViewSelectionFollowsFocus;
+                userType.StaticInitializer = StaticInitializer_44_NavigationViewSelectionFollowsFocus;
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Disabled);
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Enabled);
                 xamlType = userType;
                 break;
 
-            case 44:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
+            case 45:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_44_NavigationViewShoulderNavigationEnabled;
+                userType.StaticInitializer = StaticInitializer_45_NavigationViewShoulderNavigationEnabled;
                 userType.AddEnumValue("WhenSelectionFollowsFocus", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.WhenSelectionFollowsFocus);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Always);
                 userType.AddEnumValue("Never", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Never);
                 xamlType = userType;
                 break;
 
-            case 45:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
+            case 46:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_45_NavigationViewTemplateSettings;
+                userType.StaticInitializer = StaticInitializer_46_NavigationViewTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 46:   //  Microsoft.UI.Xaml.DependencyObject
+            case 47:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 47:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator
+            case 48:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_47_NavigationViewItemSeparator;
-                userType.StaticInitializer = StaticInitializer_47_NavigationViewItemSeparator;
+                userType.Activator = Activate_48_NavigationViewItemSeparator;
+                userType.StaticInitializer = StaticInitializer_48_NavigationViewItemSeparator;
                 xamlType = userType;
                 break;
 
-            case 48:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
+            case 49:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.StaticInitializer = StaticInitializer_48_NavigationViewItemBase;
+                userType.StaticInitializer = StaticInitializer_49_NavigationViewItemBase;
                 userType.AddMemberName("IsSelected");
                 xamlType = userType;
                 break;
 
-            case 49:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
+            case 50:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_49_NavigationViewItem;
-                userType.StaticInitializer = StaticInitializer_49_NavigationViewItem;
+                userType.Activator = Activate_50_NavigationViewItem;
+                userType.StaticInitializer = StaticInitializer_50_NavigationViewItem;
                 userType.AddMemberName("CompactPaneLength");
                 userType.AddMemberName("HasUnrealizedChildren");
                 userType.AddMemberName("Icon");
@@ -860,54 +866,54 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 50:   //  Microsoft.UI.Xaml.Controls.IconElement
+            case 51:   //  Microsoft.UI.Xaml.Controls.IconElement
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 51:   //  Microsoft.UI.Xaml.Controls.InfoBadge
+            case 52:   //  Microsoft.UI.Xaml.Controls.InfoBadge
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.StaticInitializer = StaticInitializer_51_InfoBadge;
+                userType.StaticInitializer = StaticInitializer_52_InfoBadge;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 52:   //  Microsoft.UI.Xaml.Controls.Control
+            case 53:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 53:   //  RecipesWinUI.MainWindow
+            case 54:   //  RecipesWinUI.MainWindow
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_53_MainWindow;
-                userType.StaticInitializer = StaticInitializer_53_MainWindow;
+                userType.Activator = Activate_54_MainWindow;
+                userType.StaticInitializer = StaticInitializer_54_MainWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 54:   //  Microsoft.UI.Xaml.Window
+            case 55:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 55:   //  RecipesWinUI.Views.RecipeListPage
+            case 56:   //  RecipesWinUI.Views.RecipeListPage
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_55_RecipeListPage;
-                userType.StaticInitializer = StaticInitializer_55_RecipeListPage;
+                userType.Activator = Activate_56_RecipeListPage;
+                userType.StaticInitializer = StaticInitializer_56_RecipeListPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 56:   //  RecipesWinUI.ViewModels.RecipeListViewModel
+            case 57:   //  RecipesWinUI.ViewModels.RecipeListViewModel
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_56_RecipeListViewModel;
+                userType.StaticInitializer = StaticInitializer_57_RecipeListViewModel;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 57:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 58:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_57_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_57_TreeViewNode;
+                userType.Activator = Activate_58_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_58_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -919,15 +925,15 @@ namespace RecipesWinUI.RecipesWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 58:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 59:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_58_IList;
-                userType.CollectionAdd = VectorAdd_58_IList;
+                userType.StaticInitializer = StaticInitializer_59_IList;
+                userType.CollectionAdd = VectorAdd_59_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 59:   //  Int32
+            case 60:   //  Int32
                 xamlType = new global::RecipesWinUI.RecipesWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
